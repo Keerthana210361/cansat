@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CanSat GCS — Keerthana210361</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"/>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
 <!-- TOP BAR -->
 <div id="topbar">
   <div id="mission-info">
@@ -128,8 +144,6 @@
 
   <!-- MIDDLE COLUMN -->
   <div id="mid-col">
-
-    <!-- GRAPHS -->
     <div class="panel">
       <div class="panel-title">📈 ALTITUDE</div>
       <canvas id="altChart"></canvas>
@@ -142,24 +156,29 @@
       <div class="panel-title">🔋 BATTERY VOLTAGE</div>
       <canvas id="battChart"></canvas>
     </div>
-
   </div>
 
   <!-- RIGHT COLUMN -->
   <div id="right-col">
-
-    <!-- GPS MAP -->
     <div class="panel">
       <div class="panel-title">🗺️ GPS TRACKING MAP</div>
       <div id="map"></div>
     </div>
-
-    <!-- ORIENTATION -->
     <div class="panel">
       <div class="panel-title">🧭 ORIENTATION</div>
       <canvas id="orientCanvas"></canvas>
     </div>
-
   </div>
 
 </div>
+
+<!-- ALL LIBRARIES -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+
+<!-- YOUR SCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
